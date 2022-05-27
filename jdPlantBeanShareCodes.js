@@ -1,0 +1,18 @@
+/*
+京东种豆得豆互助码
+此文件为Node.js专用。其他用户请忽略
+支持京东N个账号
+ */
+//云服务器腾讯云函数等NOde.js用户在此处填写东东萌宠的好友码。
+// 同一个京东账号的好友互助码用@符号隔开,不同京东账号之间用&符号或者换行隔开,下面给一个示例
+// 如: 京东账号1的shareCode1@京东账号1的shareCode2&京东账号2的shareCode1@京东账号2的shareCode2
+
+
+let PlantBeanShareCodes = [
+  'mh5uulbrvnknlr26aa6p45ombjh2ahqq6ug53xa@mlrdw3aw26j3xoj4wmwbu7tul25dsiypbxx6z5a@olmijoxgmjutywoyomcms37bqsmmyw42nnr66by@o7eiltak46s2xvcpxi4hvhg4oxxe57foifyi7qa@ozv5zqmojvq5ezkpb5mqmdnhcq3yoph2geifesa@e7lhibzb3zek3cy43u4bads7cecrrviysghhqzy@olmijoxgmjuty6hm4df6gj457pyparbiqs7yrsa@olmijoxgmjutzhdiz67m435snyktumtlchx2xwi@uwgpfl3hsfqp226jt5q57vsrxhdwq3zrqyuffgy@4npkonnsy7xi33zassfix2d5norv2cy52wn433q@4npkonnsy7xi2uibzcthp72hrcd5bsgelov222y@olmijoxgmjutzyfnnlrgjd3p457i3priqholmai@igefhjvuw6xvt64ql3dtbdghuhvcr26dqrj5nhy@olmijoxgmjutyvmve6zh27kuznhuedaj44lcema@nekfkpzkllbo3in7xlypcymxevtfdsdefjrwpcy@4npkonnsy7xi3rjpnvrywaxcqnhthlpdfphbuqa@mlrdw3aw26j3wgesdzn335l6ftepkpbf4cq5g7q@qqeaxbhhlojlgwcnvs3r3ngvc6vslpojahn4gmy@fi4h75e5edc3s62gkndsalypyh7gqzwy4xyjehi@4npkonnsy7xi2mm4ja7b6tk4nbqerpg6dy32fsi@4npkonnsy7xi3bw5ejd2m32coah25z43tsxkyoy@jezqczgr4tsecxgmf5occevx54@4npkonnsy7xi3dxf27vollxerm3glot6m6eycuq@4npkonnsy7xi24uam3ai4agn4npg6p4jii4xoni@iu237u55hwjipvkbzcwhkct54cdjxvwj2ap5zqq@rxggow4kdwppan4hljja7erokk574axpmwfmckq@cshk5bfjifz75qappquvxvmrbd3dzbbvkiirzkq',//账号一的好友shareCode,不同好友中间用@符号隔开
+]
+
+for (let i = 0; i < 50; i++) {
+  const index = (i + 1 === 1) ? '' : (i + 1);
+  exports['PlantBeanShareCodes' + index] = PlantBeanShareCodes[0];
+}
